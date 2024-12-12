@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { fetchCatData } from "../lib/CatApi";
+import { fetchCatData } from "../lib/catApi";
 
 function CatsInfo() {
   // define state variables
@@ -12,6 +12,7 @@ function CatsInfo() {
 
   // function to fetch data
   async function fetchData() {
+    // try catch for error handling
     try {
       // start fetching the data
       setLoading(true);
@@ -36,6 +37,7 @@ function CatsInfo() {
 
     }
   }
+
   // fetch data on load
   useEffect(() => {
 
@@ -49,7 +51,7 @@ function CatsInfo() {
         <div
           className="mt-5 block cursor-pointer rounded-full border border-white px-5 py-[15px] text-center font-nexaheavy text-[20px] sm:inline-block"
           onClick={fetchData}
-          aria-label="get new kitty"
+          aria-label="get new kitty please click here"
         >
           <span className="font-[tahoma]">Get New Kitty</span>
 
@@ -58,15 +60,19 @@ function CatsInfo() {
             width="30"
             height="30"
             alt="Reload"
+            aria-label="Refresh Image"
+            role="img"
             className="inline-block ml-2"
           />
         </div>
       </div>
 
       {error && (
-        <p className="text-center" aria-label="error">
-          {error}
-        </p>
+        <div className="flex justify-center items-center ">
+          <p className="text-center text-2xl md:text-4xl" aria-label="error">
+            We are having some issues, please try again
+          </p>
+        </div>
       )}
 
       {/* see if loading or not */}
@@ -80,6 +86,8 @@ function CatsInfo() {
             width="128"
             height="100"
             alt="Loading..."
+            aria-label="Loading..."
+            role="img"
           />
         </div>
       ) : catImage !== null ? (
@@ -98,6 +106,7 @@ function CatsInfo() {
                     src={catImage}
                     alt="Cat Images from Catify"
                     data-src={catImage}
+                    aria-label="cat image"
                   />
                 </div>
               </div>

@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Catify Project  
 
-First, run the development server:
+Welcome to **Catify**, the perfect place to find your very own kitty and learn fun facts about them! 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Check the Code and File structure on github
+   ```bash  
+            https://github.com/rajpatel2435/catify  
+   ```  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used  
+- **Next.js**  
+- **TypeScript** : to avoid runtime errors
+- **Tailwind CSS**  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Libraries Used  
+- **Axios**: For fetching data from APIs.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features  
+- **Parallel API Requests**: Improved performance by running multiple API calls concurrently.  
+- **Accessibility**: Added ARIA labels for screen readers to enhance usability.  
 
-## Learn More
+## Getting Started  
+Follow these steps to set up and run the project locally:  
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the project:  
+   ```bash  
+   git clone https://github.com/rajpatel2435/catify  
+   ```  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:  
+   ```bash  
+   cd catify  
+   ```  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
 
-## Deploy on Vercel
+4. Start the development server:  
+   ```bash  
+   npm run dev  
+   ```  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Visit the app in your browser at:  
+   [http://localhost:3000](http://localhost:3000)  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment  
+The project is deployed on Vercel and can be accessed here:  
+[Catify on Vercel](https://catify-one.vercel.app/)  
+
+## Time Spent  
+Approximately **30–45 minutes** (including deployment to Vercel).  
+
+## Challenges Faced  
+- Initially forgot to build the project locally before deploying to Vercel.  
+- Accidentally added an unused library (`axios`) in `page.tsx`.  
+
+## Potential Future Enhancements  
+
+### Performance Optimization
+- Enable caching to store API responses and further improve performance. 
+- Optmize DB Queries
+
+### Additional Features
+- Post your own kitty along with Facts (CRUD operation in API)
+- We can build User Authentication
+- After login, they can also save their own kitty (Adding like functionality)
+- Share with your friends (User Engagements for website traffic)
+- Fetch similar breeds of cats and provide related facts.  
+- Categorize cats into different groups for easier exploration.   
+
+### SEO 
+- Implement more tags for seo related such as opengraph, data, schema and more
+
+## Feedback
+
+### Good things
+- Clear project scope and requirements 
+- Defined specific tasks
+- Flexibility on coding languange
+
+
+### improvement
+- bit confused for allow users to fetch cat image and facts (with one single button or 2 button) (Implemenetd only one button to do one task)
+- I can also make sperate button for that (Logic is there if we need)
+- will be more good if you can provide sample design
+
+
+## Contact  
+If you have any issues or suggestions, feel free to reach out:  
+📧 **rajpatel2435@gmail.com**  
