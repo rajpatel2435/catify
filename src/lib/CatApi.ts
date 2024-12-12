@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 
 const fetchCatData = async (): Promise<{ catImage: string; catFact: string } | null> => {
   try {
