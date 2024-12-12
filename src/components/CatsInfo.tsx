@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { fetchCatData } from "../lib/catApi";
+import { fetchCatData } from "../lib/CatApi";
 
 function CatsInfo() {
   // define state variables
